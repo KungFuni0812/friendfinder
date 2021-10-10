@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Foodie Friend Finder Survey</title>
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container text-center">
+            <h1 class="row text-center"><b><i class="fa fa-fire"></i> Foodie Friend Finder Survey</b></h1>
+            <hr>
+            <form>
+                <div class = "row">
+                    <div class = "col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name" aria-describedby="basic-addon2">
+
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Profile URL" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                </div>
+                <div class = "row surveyquestions text-center">
+                    <div class = "col-12">
+                        <div class = "row" id = "q1">
+                            <h3>I enjoy discovering weird, new, and non-american type resturants to try.</h3>
+                            <div class = "col-12" id = "answers1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup1" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup1" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup1" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup1" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q2">
+                            <h3>I enjoy the quality of the food and not the quantity of the food.</h3>
+                            <div class = "col-12" id = "answers2">
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answergroup2" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1" value="1">
+                                        1: strongly disagree
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answergroup2" value="option2" checked>
+                                        <label class="form-check-label" for="exampleRadios1" value="2">
+                                        2: somewhat disagree
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answergroup2" value="option3" checked>
+                                        <label class="form-check-label" for="exampleRadios1" value="3">
+                                        3: neutral
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answergroup2" value="option4" checked>
+                                        <label class="form-check-label" for="exampleRadios1" value="4">
+                                        4: somewhat agree
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answergroup2" value="option5" checked>
+                                        <label class="form-check-label" for="exampleRadios1" value="5">
+                                        5: strongly agree
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q3">
+                            <h3>I enjoy having my food brought to me by a wait staff vs a buffett.</h3>
+                            <div class = "col-12" id = "answers3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup3" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup3" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup3" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup3" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup3" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q4">
+                            <h3>I enjoy meals that are simple to make more than foods that are hard to recreate.</h3>
+                            <div class = "col-12" id = "answers4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup4" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup4" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup4" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup4" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup4" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q5">
+                            <h3>I like to follow directions when recreating a recipe from another source.</h3>
+                            <div class = "col-12" id = "answers5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup5" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup5" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup5" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup5" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup5" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q6">
+                            <h3>I enjoy shopping for exotic ingredients so that I can create exotic recipes.</h3>
+                            <div class = "col-12" id = "answers6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup6" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup6" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup6" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3"> 
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup6" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup6" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q7">
+                            <h3>I prefer restaurants that uses local source ingredients over big chain restaurants.</h3>
+                            <div class = "col-12" id = "answers7">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup7" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup7" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup7" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup7" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup7" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q8">
+                            <h3>I like when people enjoys and compliments my homemade recipe meals. </h3>
+                            <div class = "col-12" id = "answers8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup8" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup8" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup8" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup8" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup8" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q9">
+                            <h3>I enjoy dinning with a group of friends or family over eating by myself.</h3>
+                            <div class = "col-12" id = "answers9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup9" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup9" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup9" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup9" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup9" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row" id = "q10">
+                            <h3>If the restuarant is very good based on reviews, I am okay with traveling over an hour to try it.</h3>
+                            <div class = "col-12" id = "answers10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup10" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="1">
+                                    1: strongly disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup10" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="2">
+                                    2: somewhat disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup10" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="3">
+                                    3: neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup10" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="4">
+                                    4: somewhat agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="answergroup10" value="option5" checked>
+                                    <label class="form-check-label" for="exampleRadios1" value="5">
+                                    5: strongly agree
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "row" id = "submit">
+                    <div class = "col-12">
+                        <button type="button text-center" class="btn btn-danger btn-lg btn-block" id ="submitsurvey"><i class="fas fa-utensils"></i> Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
